@@ -4,7 +4,7 @@ import os
 
 DB_URI = os.environ.get("DATABASE_URI", "your_mongodb_connection_string")
 client = MongoClient(DB_URI)
-db = client["your_database_name"]
+db = client["Cluster0"]
 broadcast_collection = db["broadcast"]
 
 INSERTION_LOCK = threading.RLock()
