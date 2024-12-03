@@ -1,11 +1,12 @@
 # (©)Codexbotz
 # Recode by @mrismanaziz
 # t.me/SharingUserbot & t.me/Lunatic0de
-
 import pyromod.listen
 import sys
-
 from pyrogram import Client, enums
+import pyrogram.utils
+
+pyrogram.utils.MIN_CHANNEL_ID =-1009147483647
 
 from config import (
     API_HASH,
