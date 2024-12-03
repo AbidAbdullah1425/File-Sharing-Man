@@ -1,8 +1,8 @@
 import threading
 from pymongo import MongoClient
 import os
+from config import DB_URI
 
-DB_URI = os.environ.get("DATABASE_URI", "your_mongodb_connection_string")
 client = MongoClient(DB_URI)
 db = client["Cluster0"]
 broadcast_collection = db["broadcast"]
